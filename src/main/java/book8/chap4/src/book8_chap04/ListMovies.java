@@ -44,8 +44,8 @@ public class ListMovies {
         Connection con = null;
         try {
             String url = "jdbc:postgresql://localhost:5432/postgres";
-            String user = "postgres";
-            String pw = "thami82d";
+            String user = " "; // enter psql username
+            String pw = ""; // enter psql password
             con = DriverManager.getConnection(url, user, pw);
         } catch (SQLException e) {
             System.out.println(e.getMessage());
